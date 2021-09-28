@@ -1,0 +1,137 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+    background-color: black;
+    background-image: url("../images/header-png.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+header .logo a{
+  background-image: url("../images/logo.png");
+  background-size: 90px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100px;
+  position: relative;
+  text-indent: -999999999999px;
+  top: -60px;
+  height: 80px;
+
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-right: 20px;
+  color: white;
+}
+
+.container{
+  background: #F0F0F0;
+  color: gray;
+  padding: .5px 0px 0px 10px;
+  margin: 0px;
+}
+
+.title h1{
+  font-family: consolas;
+  font-size: 50px;
+  padding: 0 0 0 0;
+  animation: type 5s;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
+.cursor{
+  display: inline-block;
+  vertical-align: top;
+  width: 5px;
+  height:5px;
+  animation: blink 1s infinite;
+}
+
+.about-me{
+  background-color: #F0F0F0;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 -30px;
+}
+
+.about-me img{
+  width: 190px;
+  height: 220px;
+  float: left;
+  margin-right: 150px;
+  border: 1px solid #fffafa;
+  border-radius: 50%;
+  box-shadow: black 10px 10px 100px;
+
+
+}
+
+.about-me p{
+  margin: auto;
+  font-size: 20px;
+}
+
+
+.button-section{
+  background-color: #F0F0F0;
+  color: gray;
+  padding: 20px;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  font-size: consoles;
+}
+
+.btn:hover,
+.btn:focus {
+  box-shadow: 1px 1px 2px black, 0 0 15px red, 0 0 5px darkred;
+  transform: translateY(-8px);
+}
+
+@keyframes type{
+  0%{width: 0ch;}
+  100%{width:48ch;}
+}
+
+@keyframes blink {
+  0%{ opacity: 1.0;}
+  50% { opacity: 0.0;}
+  100% { opacity: 1.0;}
+}
+
+footer{
+  background: black;
+  color; gray;
+  font-size:12px;
+  text-align: center;
+  padding: 20px 20px;
+  margin-top: 17%;
+}

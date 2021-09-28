@@ -8,6 +8,7 @@ body{
 header {
     background-color: black;
     background-image: url("../images/header-png.jpg");
+    opacity: 0.8;
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -87,12 +88,48 @@ nav li{
   height: 180px;
   float: left;
   margin-right: 15px;
+
 }
 
 
 .contents figure p {
   margin: auto;
-  text-size: 13px;
+  text-size: 25px;
+}
+
+.contents figure a{
+  color: 	#989898;
+  text-decoration: none;
+  margin-top: 35px;
+}
+
+.contents figure a:hover{
+  color: #989898;
+  text-decoration: underline;
+  animation: fadeIn 2s;
+}
+
+.about-me{
+  animation: type 2s steps(9, end);
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: consolas;
+  border-right: 4px solid black;
+  width: 9ch;
+}
+
+@keyframes type{
+  0%{
+    width: 0ch;
+  }
+  100%{
+    width: 9ch;
+  }
+}
+
+@keyframes fadeIn {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
 }
 
 
@@ -102,5 +139,5 @@ footer{
   font-size: 12px;
   text-align: center;
   padding: 20px 20px;
-  margin-top: 6.8%;
+  margin-top: 5.7%;
 }
