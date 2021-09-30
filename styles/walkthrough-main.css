@@ -1,0 +1,110 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+  margin: 0;
+  padding: 0;
+}
+
+/* START OF HEADER */
+
+header {
+    background-color: black;
+    background-image: url("../images/header-png.jpg");
+    opacity: 0.8;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+header .mobile{
+  display: none;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+header .logo a{
+  background-image: url("../images/logo.png");
+  background-size: 90px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100px;
+  position: relative;
+  text-indent: -999999999999px;
+  top: -60px;
+  height: 80px;
+
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-right: 20px;
+  color: white;
+}
+
+/* END OF HEADER */
+
+.basic-pentesting-card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 1000px;
+  margin: 20px 0 0 50px;
+  display: flex;
+
+}
+
+.basic-pentesting-card:hover{
+  box-shadow: 0 0px 16px 0 rgba(0,0,0,0.4);
+}
+
+.basic-pentesting-card img{
+  width: 500px;
+}
+
+.basic-pentesting-card h4{
+  display: inline-block;
+  padding: 50px;
+  font-size: 35px;
+  width: 16ch;
+}
+
+.basic-pentesting-card a{
+  text-decoration: none;
+  color: #989898;
+}
+
+.basic-pentesting-card a:hover{
+  color: #989898;
+  text-decoration: underline;
+  animation: fadeOut 2s;
+}
+
+.vuln-link{
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 350px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.vuln-link a{
+  color: #f2003c;
+}
+
+@keyframes fadeOut {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}

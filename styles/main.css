@@ -17,6 +17,10 @@ header {
     text-align: center;
 }
 
+header .mobile{
+  display: none;
+}
+
 header a {
   color: white;
   text-decoration: none;
@@ -47,6 +51,19 @@ nav li{
   display: inline-block;
   margin-right: 20px;
   color: white;
+}
+
+/* RESPONSIVE RULES */
+@media screen and (max-width: 645px){
+  header{height: 200px;}
+  header .mobile{display: inline-block;}
+  header .desktop{display: none;}
+}
+
+@media screen and (max-width: 450px){
+  header{height: 100px;}
+  header .mobile{display: inline-block;}
+  header .desktop{display: none;}
 }
 
 
@@ -107,6 +124,11 @@ nav li{
   color: #989898;
   text-decoration: underline;
   animation: fadeIn 2s;
+}
+
+/* RESPONSIVE RULES */
+@media screen and (max-width:645px){
+  .contents{display: block;}
 }
 
 .about-me{

@@ -52,6 +52,14 @@ nav li{
   color: white;
 }
 
+
+/* RESPONSIVE RULES */
+@media screen and (max-width: 645px){
+  header{width: 100%;}
+  header .mobile{display: inline-block;}
+  header .desktop{display: none;}
+}
+
 /* End of the header */
 
 
@@ -180,7 +188,12 @@ nav li{
   transform: translateY(-8px);
 }
 
-
+@media screen and (max-width:645px){
+  .container{display: block; width: 100%;}
+  .about-me{display: block; width: 100%;}
+  .skills{display: block; width: 100%;}
+  .contact-section{display: block; width: 100%;}
+}
 
 
 footer{
@@ -192,7 +205,7 @@ footer{
   margin-top: 5%;
 }
 
-@@font-face {
+@font-face {
   font-family: nick;
   src: url(fonts/nicholson_frensh_nvc.ttf);
 }
